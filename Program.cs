@@ -19,23 +19,7 @@ namespace Modul9Task1
                 {
                     throw item;
                 }
-                catch (Exception ex) when (ex is FormatException)
-                {
-                    ExceptionHandler(ex);
-                }
-                catch (Exception ex) when (ex is ArgumentException)
-                {
-                    ExceptionHandler(ex);
-                }
-                catch (Exception ex) when (ex is FileNotFoundException)
-                {
-                    ExceptionHandler(ex);
-                }
-                catch (Exception ex) when (ex is OverflowException)
-                {
-                    ExceptionHandler(ex);
-                }
-                catch (Exception ex) when (ex is MyException)
+                catch (Exception ex) 
                 {
                     ExceptionHandler(ex);
                 }
